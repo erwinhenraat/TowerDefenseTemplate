@@ -4,24 +4,15 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public GameObject enemyPrefab;
-    // Start is called before the first frame update
-    void Start()
+    public static EnemySpawner main;
+    
+    
+    public Transform StartPoint;
+    public Transform[] path;
+
+    private void Awake()
     {
-        StartCoroutine(SpawnEnemy());
+        main = this; 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    IEnumerator SpawnEnemy()
-    {
-        while (true) 
-        {
-            Instantiate(enemyPrefab);
-            yield return new WaitForSeconds(1);
-        }
-    }
 }

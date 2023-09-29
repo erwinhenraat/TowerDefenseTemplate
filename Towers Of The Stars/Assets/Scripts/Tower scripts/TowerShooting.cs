@@ -1,20 +1,35 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class TowerShooting : MonoBehaviour
 {
+    public RangeScript Target;
     public GameObject BulletPrefab;
+    public float AttackSpeed = 5;
+    public bool Shoot = true;
 
-    // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
-        
+        Target = GetComponentInChildren<RangeScript>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Update()
     {
-        
+        if (Shoot == true && Target.EnemiesInRange.Count != 0) 
+        {
+            GameObject Bullet = Instantiate(BulletPrefab, transform.position, transform.rotation);
+            Bullet.GetComponent<BulletShooting>().targetPos = Target.EnemiesInRange[0].transform;
+            Shoot = false;
+            StartCoroutine(AttackDelay());
+        }
+    }
+
+    IEnumerator AttackDelay()
+    {
+        yield return new WaitForSeconds(AttackSpeed);
+        Shoot = true;
     }
 }

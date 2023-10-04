@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class UpdateFragAmt : MonoBehaviour
 {
-    TMP_Text textField;
+    public TMP_Text textField;
     void Start()
     {
         textField = GetComponent<TMP_Text>();

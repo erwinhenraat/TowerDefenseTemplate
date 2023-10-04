@@ -46,9 +46,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.56, y: 0}
+  m_Offset: {x: 0.56, y: -0.47}
   serializedVersion: 2
-  m_Radius: 1.39
+  m_Radius: 0.35
 --- !u!114 &1911209073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73,7 +73,7 @@ GameObject:
   - component: {fileID: 3646441256323645679}
   - component: {fileID: 4782621383432974427}
   m_Layer: 0
-  m_Name: Tower 1
+  m_Name: PlacableTower1
   m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

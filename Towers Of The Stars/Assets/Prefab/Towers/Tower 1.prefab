@@ -46,7 +46,7 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.56, y: 0}
+  m_Offset: {x: 0.53, y: 0}
   serializedVersion: 2
   m_Radius: 1.39
 --- !u!114 &1911209073
@@ -72,6 +72,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3646441256323645679}
   - component: {fileID: 4782621383432974427}
+  - component: {fileID: 1634286761}
   m_Layer: 0
   m_Name: Tower 1
   m_TagString: Tower
@@ -147,3 +148,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1634286761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7222907511095041673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83fdc603b9716fe4bb423506d81c3992, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Target: {fileID: 0}
+  BulletPrefab: {fileID: 7254339131936387413, guid: 305a8003516e59a469acabb730742d3a, type: 3}
+  AttackSpeed: 1
+  Shoot: 1

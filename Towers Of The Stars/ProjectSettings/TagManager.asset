@@ -9,6 +9,8 @@ TagManager:
   - Tower
   - Grass
   - Path
+  - SunSpire
+  - NeutralizedCloud
   layers:
   - Default
   - TransparentFX

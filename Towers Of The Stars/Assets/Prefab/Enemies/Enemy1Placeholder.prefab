@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -8168852469207797203}
   - component: {fileID: 5624804023681014641}
   - component: {fileID: 3253758024539142243}
+  - component: {fileID: -6389367222703853725}
   m_Layer: 0
   m_Name: Enemy1Placeholder
   m_TagString: Enemy
@@ -30,8 +31,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4539899612151083185}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.9195252, y: -0.94076574, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.0827, y: -1.2186, z: 0}
+  m_LocalScale: {x: 2.8519864, y: 2.8519864, z: 2.8519864}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -78,8 +79,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.6698113, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: -956379379, guid: 03e0ed2cfc0ea0d4384fa3d91c52fed6, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -103,7 +104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waypointScript: {fileID: 0}
   currentIndex: 0
-  speed: 5
+  speed: 0
 --- !u!58 &6699741809669169398
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -157,6 +158,7 @@ MonoBehaviour:
   BulletStat: {fileID: 0}
   Health: 5
   HasDied: 0
+  Neutralized: {fileID: 2886491709280050739, guid: dd985fbc13c05984f9e0790d21da5434, type: 3}
 --- !u!114 &3253758024539142243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,5 +172,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
-  speed: 0
+  speed: 5
   Points: 1
+--- !u!95 &-6389367222703853725
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4539899612151083185}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a85cb04a6d2c0f44ebce42d6c3e8df96, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

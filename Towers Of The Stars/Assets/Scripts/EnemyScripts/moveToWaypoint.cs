@@ -9,13 +9,14 @@ public class moveToWaypoint : MonoBehaviour
     //Wordt later gebruikt om de waypoint te zetten
     public int currentIndex;
 
-    public float speed = 5;
+    public float speed;
 
     // Start is called before the first frame update
     void Start()
     {
         // Vind de waypoint holder in de scene
         waypointScript = GameObject.Find("WaypointHolder").GetComponent<WaypointScript>();
+        speed = GetComponent<EnemyStats>().speed;
     }
 
     // Update is called once per frame

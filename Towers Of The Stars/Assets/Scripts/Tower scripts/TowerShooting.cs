@@ -11,6 +11,7 @@ public class TowerShooting : MonoBehaviour
     public float AttackSpeed = 5;
     public bool Shoot = true;
 
+
     public void Start()
     {
         Target = GetComponentInChildren<RangeScript>();

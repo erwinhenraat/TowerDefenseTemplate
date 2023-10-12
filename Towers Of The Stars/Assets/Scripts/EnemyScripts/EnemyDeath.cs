@@ -8,15 +8,12 @@ public class EnemyDeath : MonoBehaviour
     public BulletShooting BulletStat;
     public float Health;
     public bool HasDied;
+    public GameObject Neutralized;
+
     void Start()
     {
         stats= GetComponent<EnemyStats>();
         Health = stats.health;
-    }
-
-    private void Update()
-    {
-        
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
@@ -36,11 +33,15 @@ public class EnemyDeath : MonoBehaviour
 
         if(Health <= 0 && !HasDied)
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
 
             HasDied = true;
             PointSystem Point = GameObject.Find("PointCanvas").GetComponent<PointSystem>();
             Point.AddPoints(stats.Points);
+            GetComponent<Animator>().SetBool("IsDead", true);
+            gameObject.GetComponent<SpriteRenderer>().sprite = Neutralized.GetComponent<SpriteRenderer>().sprite;
+            gameObject.tag = Neutralized.tag;
+
         }
     }
 }

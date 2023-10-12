@@ -1386,7 +1386,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -205.09998, y: 193.82}
+  m_AnchoredPosition: {x: -205.09999, y: 193.82}
   m_SizeDelta: {x: -782.54, y: -390.09998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &652281411
@@ -4528,3 +4528,64 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &6713447914274829939
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 578669417657229604, guid: 693128e12127c824c9e449d4dcb56f4c, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 578669417657229604, guid: 693128e12127c824c9e449d4dcb56f4c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 578669417657229604, guid: 693128e12127c824c9e449d4dcb56f4c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 578669417657229604, guid: 693128e12127c824c9e449d4dcb56f4c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 578669417657229604, guid: 693128e12127c824c9e449d4dcb56f4c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 578669417657229604, guid: 693128e12127c824c9e449d4dcb56f4c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 578669417657229604, guid: 693128e12127c824c9e449d4dcb56f4c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 578669417657229604, guid: 693128e12127c824c9e449d4dcb56f4c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 578669417657229604, guid: 693128e12127c824c9e449d4dcb56f4c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 578669417657229604, guid: 693128e12127c824c9e449d4dcb56f4c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 578669417657229604, guid: 693128e12127c824c9e449d4dcb56f4c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2750270467109719251, guid: 693128e12127c824c9e449d4dcb56f4c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8927428337391416915, guid: 693128e12127c824c9e449d4dcb56f4c, type: 3}
+      propertyPath: m_Name
+      value: TheSunSpire
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 693128e12127c824c9e449d4dcb56f4c, type: 3}

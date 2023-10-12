@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 5624804023681014641}
   - component: {fileID: 3253758024539142243}
   - component: {fileID: -6389367222703853725}
+  - component: {fileID: -3956052960944748723}
   m_Layer: 0
   m_Name: Enemy1Placeholder
   m_TagString: Enemy
@@ -195,3 +196,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-3956052960944748723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4539899612151083185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8b8bc5f5593c7146993cb8e00682b30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Attack: 0
+  attackSpeed: 1
+  Damage: 1
+  Bolt: {fileID: 8076517926425972156, guid: 698de6ff3d72e894497db74f3dddaa1f, type: 3}
+  spire: {fileID: 8927428337391416915, guid: 693128e12127c824c9e449d4dcb56f4c, type: 3}

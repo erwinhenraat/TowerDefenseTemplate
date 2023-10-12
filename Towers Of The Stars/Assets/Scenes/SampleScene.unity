@@ -1386,7 +1386,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -205.09999, y: 193.82}
+  m_AnchoredPosition: {x: -205.1, y: 193.82}
   m_SizeDelta: {x: -782.54, y: -390.09998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &652281411
@@ -3948,6 +3948,7 @@ GameObject:
   - component: {fileID: 1882033426}
   - component: {fileID: 1882033428}
   - component: {fileID: 1882033427}
+  - component: {fileID: 1882033429}
   m_Layer: 0
   m_Name: Square (4)
   m_TagString: Grass
@@ -4048,6 +4049,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1882033429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882033425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81379741a3fb5e641b64910e4c35c01d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 50
 --- !u!1 &1890266345
 GameObject:
   m_ObjectHideFlags: 0
@@ -4340,7 +4354,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -391.26807, y: 193.80164}
+  m_AnchoredPosition: {x: -391.2681, y: 193.80164}
   m_SizeDelta: {x: -782.5361, y: -387.6033}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2060353696
@@ -4589,3 +4603,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 693128e12127c824c9e449d4dcb56f4c, type: 3}
+--- !u!1 &6713447914274829940 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8927428337391416915, guid: 693128e12127c824c9e449d4dcb56f4c, type: 3}
+  m_PrefabInstance: {fileID: 6713447914274829939}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &6713447914274829941
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6713447914274829940}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.42}
+  serializedVersion: 2
+  m_Radius: 0.63

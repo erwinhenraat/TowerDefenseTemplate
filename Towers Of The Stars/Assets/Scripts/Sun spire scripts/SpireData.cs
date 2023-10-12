@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpireData
+public class SpireData : MonoBehaviour
 {
-    public static float Health;
-    public static float shield;
+    public float Health;
 }

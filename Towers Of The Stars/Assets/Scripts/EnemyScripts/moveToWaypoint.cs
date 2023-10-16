@@ -35,4 +35,13 @@ public class moveToWaypoint : MonoBehaviour
         WaypointVector.Normalize();
         transform.position += WaypointVector * Time.deltaTime * speed;
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        if (collision.CompareTag("LastWaypoint"))
+        {
+            Destroy(gameObject);
+        }
+        
+    }
 }

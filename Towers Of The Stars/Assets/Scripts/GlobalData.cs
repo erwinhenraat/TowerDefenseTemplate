@@ -10,5 +10,5 @@ public class GlobalData
     public static int PlayerPoint;
     public static int CloudCoins;
 
-    public static int SpireHealth = 100;
+    public static int SpireHealth = 1;
 }

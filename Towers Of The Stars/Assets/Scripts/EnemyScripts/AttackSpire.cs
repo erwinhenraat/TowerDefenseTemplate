@@ -4,30 +4,16 @@ using UnityEngine;
 
 public class AttackSpire : MonoBehaviour
 {
-    public bool Attack = false;
-    public float attackSpeed;
-    public float Damage;
-    public float spireHealth;
-    public GameObject Bolt;
-    public GameObject spire;
+    public int Damage;
 
-    public void Start()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        spireHealth = spire.GetComponent<SpireData>().Health;
-    }
-    public void Update()
-    {
-        if(Attack == true)
+        
+
+        if (collision.CompareTag("SunSpire") && gameObject.tag != "NeutralizedCloud")
         {
-
-        }
-    }
-
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.CompareTag("SunSpire"))
-        {
-            Attack = true;
+            GlobalData.SpireHealth -= Damage;
+            Debug.Log(GlobalData.SpireHealth.ToString());
         }
     }
 }

@@ -211,5 +211,6 @@ MonoBehaviour:
   Attack: 0
   attackSpeed: 1
   Damage: 1
+  spireHealth: 0
   Bolt: {fileID: 8076517926425972156, guid: 698de6ff3d72e894497db74f3dddaa1f, type: 3}
   spire: {fileID: 8927428337391416915, guid: 693128e12127c824c9e449d4dcb56f4c, type: 3}

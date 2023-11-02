@@ -23,7 +23,20 @@ public class EnemySpawner : MonoBehaviour
         timeBetweenDelay -= Time.deltaTime; //checks how much time passed
         if (timeBetweenDelay <= 0) // checks if timer is up
         {
-            timeBetweenDelay = 3; // resets timer
+            if (GlobalData.PlayerPoint <= 50)
+            {
+                timeBetweenDelay = 3; // resets timer
+            }
+            if(GlobalData.PlayerPoint > 50 && GlobalData.PlayerPoint <= 100) 
+            {
+                timeBetweenDelay = 2;
+            }
+            if(GlobalData.PlayerPoint > 100)
+            {
+                timeBetweenDelay = 1.5f;
+            }
+
+            
             StartCoroutine(SpawnDelay(enemyA)); // starts spawn 
             
         }

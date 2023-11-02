@@ -26,7 +26,6 @@ public class UpdateShopUI : MonoBehaviour
 
             GetField.textField.text = GlobalData.CloudCoins.ToString();
         }
-
         TowerCostText.text = TowerCost.ToString();
     }
 }

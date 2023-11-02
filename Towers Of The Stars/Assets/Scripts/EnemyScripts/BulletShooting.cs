@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class BulletShooting : MonoBehaviour
 {
-    public float BulletSpeed = 5;
-    public float damage = 2;
     public Transform targetPos;
     private Vector3 dir;
+    internal float speed, damage;
+
     public void Start()
     {
         dir = targetPos.position - transform.position;
         dir.Normalize();
+        
     }
     public void Update()
     {
@@ -19,7 +20,7 @@ public class BulletShooting : MonoBehaviour
         {
             return;
         }
-        
-        transform.position += dir * Time.deltaTime * BulletSpeed;
+
+        transform.position += dir * Time.deltaTime * speed;
     }
 }

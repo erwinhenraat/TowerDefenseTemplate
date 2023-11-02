@@ -156,7 +156,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stats: {fileID: 0}
-  BulletStat: {fileID: 0}
   Health: 5
   HasDied: 0
   Neutralized: {fileID: 2886491709280050739, guid: dd985fbc13c05984f9e0790d21da5434, type: 3}
@@ -172,7 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de07885b007fcb04e890a60976cb70bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
+  health: 3
   speed: 5
   Points: 1
 --- !u!95 &-6389367222703853725
@@ -208,9 +207,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8b8bc5f5593c7146993cb8e00682b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Attack: 0
-  attackSpeed: 1
   Damage: 1
-  spireHealth: 0
-  Bolt: {fileID: 8076517926425972156, guid: 698de6ff3d72e894497db74f3dddaa1f, type: 3}
-  spire: {fileID: 8927428337391416915, guid: 693128e12127c824c9e449d4dcb56f4c, type: 3}

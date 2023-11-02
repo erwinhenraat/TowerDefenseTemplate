@@ -5,10 +5,10 @@ using UnityEngine;
 public class EnemyDeath : MonoBehaviour
 {
     public EnemyStats stats;
-    public BulletShooting BulletStat;
     public float Health;
     public bool HasDied;
     public GameObject Neutralized;
+    TowerStats towerStats;
 
     void Start()
     {
@@ -21,12 +21,9 @@ public class EnemyDeath : MonoBehaviour
 
 
         if (collision.CompareTag("Bullet"))
-        {
-            BulletStat = collision.gameObject.GetComponent<BulletShooting>();
-
-
+        { 
             Debug.Log("Enemy hit!");
-            Health -= BulletStat.damage;
+            Health -= collision.GetComponent<BulletShooting>().damage;
             Debug.Log($"Health is now {Health}");
             Destroy(collision.gameObject);
         }

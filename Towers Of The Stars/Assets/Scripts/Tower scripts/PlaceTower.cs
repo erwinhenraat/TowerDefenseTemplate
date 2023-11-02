@@ -7,7 +7,6 @@ public class PlaceTower : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public bool dragging = true;
     public bool placable = false;
     public GameObject Tower;
     void Start()

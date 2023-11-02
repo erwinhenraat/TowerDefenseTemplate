@@ -3,10 +3,9 @@ Dit is een template wat door jullie te gebruiken is voor het juist inleveren van
 
 Begin met een korte omschrijving van je towerdefense game en hoe deze werkt. Plaats ook een paar screenshots.
 
-![not really my game](https://cdn.akamai.steamstatic.com/steam/apps/246420/ss_aaaf33cdb9106bd0801a36049516d95c6f2352b0.600x338.jpg?t=1686321490)
+![Screenshot of what the game looks like](\TowerDefenseTemplate\readmeVisuals\GameScreenshot1.png)
 
-![also not](https://cdn.akamai.steamstatic.com/steam/apps/960090/ss_900d7c00d45ff2a258d4c8d59ee47f7f04854c37.600x338.jpg?t=1686097340)
-
+![Screenshot with towers and clouds](\TowerDefenseTemplate\readmeVisuals\GameScreenshot2.png)
 
 ## Product 1: "DRY SRP Scripts op GitHub"
 
@@ -15,14 +14,14 @@ Omschrijf hier waarom jij denkt dat je in die scripts aan deze eisen voldoet.
 
 Bijvoorbeeld:
 
-*"In dit script heb ik een array gebruikt voor al mijn vijanden die in de nieuwe wave worden gespawnd. Hierdoor heb ik mijzelf niet hoeven herhalen **(DRY)** in de code omdat ik met 1 regel alle enemies kan plaatsen via en for each loop.
-[link naar script](/MyTowerDefenseGame/Assets/Scripts/JustAScript.cs)"*
+*"In dit script zorg ik ervoor dat ik mijn winkel kan openen en sluiten. Hierdoor heb ik mijzelf niet hoeven herhalen **(DRY)** in de code omdat ik met een switch statement de winkel kan open en sluiten vanuit een script.
+[link naar script](/TowerDefenseTemplate/Towers Of The Stars/Assets/Scripts/Shop scripts/OpenAndClose.cs)"*
 
 ## Product 2: "Projectmappen op GitHub"
 
 Je commit de mappenstructuur van je unity project op github en verwijst vanuit je readme naar de root map van je project. Met een netjes en goed gestructureerde mappenstructuur en benamingen van files toon je aan dat je dit leerdoel beheerst. 
 
-Dit is de [ROOT](/MyTowerDefenseGame/) folder van mijn unity project.
+Dit is de [ROOT](/Towers Of The Stars/) folder van mijn unity project.
 
 Zorg dat deze verwijst naar je Develop branch.
 

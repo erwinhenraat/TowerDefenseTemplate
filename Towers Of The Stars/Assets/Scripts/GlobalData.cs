@@ -7,8 +7,25 @@ public class GlobalData
 
     /* Static makes it so your points and cloud coins follow you to every scene */
 
+
+    //Currency
     public static int PlayerPoint;
     public static int CloudCoins;
 
-    public static int SpireHealth = 1;
+    //spire stats
+    public static int SpireHealth = 100;
+
+    //Tower selection
+    public static GameObject SelectedTower;
+    public static List<GameObject> TowerList = new List<GameObject>();
+
+    //standard tower stats
+
+    public static float BulletSpeed;
+    public static float BulletDamage;
+    public static float AttackSpeed;
+
+    //enemy stats
+    public static float EnemyHealth;
+
 }

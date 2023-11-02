@@ -8,10 +8,11 @@ public class OpenAndClose : MonoBehaviour
 {
 
     public GameObject shop;
+    public GameObject upgrades;
+    public CanvasGroup group;
+    public UpgradeTower upgrader;
     public void Start()
     {
-        Debug.Log(shop.transform.position);
-
         
     }
 
@@ -23,13 +24,36 @@ public class OpenAndClose : MonoBehaviour
         {
             case "ExitButton":
                 Debug.Log("ShopClosed");
-                shop.transform.position = new Vector3(18.93f, 0f, 9.00f);
+                HideShop();
+                HideUpgrades();
                 return;
             case "OpenButton":
                 Debug.Log("ShopOpened");
-                shop.transform.position = new Vector3(6.55f, 0f, 87.0f);
+                ShowShop();
                 return;
         }
+    }
+
+    public void ShowShop()
+    {
+        group = shop.GetComponent<CanvasGroup>();
+        group.alpha = 1f;
+        group.blocksRaycasts = true;
+        upgrader.HookTower();
+
+    }
+    public void HideShop()
+    {
+        group = shop.GetComponent<CanvasGroup>();
+        group.alpha = 0f;
+        group.blocksRaycasts = false;
+    }
+    public void HideUpgrades()
+    {
+        upgrades = GameObject.Find("UpgradeItemHolder");
+        group = upgrades.GetComponent<CanvasGroup>();
+        group.alpha = 0f;
+        group.blocksRaycasts = false;
     }
 
 }
